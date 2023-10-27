@@ -27,7 +27,7 @@ function App() {
   const [gastoEditar, setGastoEditar] = useState({})
 
   const [filtro, setFiltro] = useState('')
-  const [gastosFiltrados, setGastosFiltrados] = useState('')
+  const [gastosFiltrados, setGastosFiltrados] = useState([])
 
   useEffect(() => {
       if(Object.keys(gastoEditar).length > 0){
