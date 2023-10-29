@@ -78,6 +78,10 @@ const Modal = ({setModal, animarModal, setAnimarModal, guardarGasto, gastoEditar
           <input
             id="cantidad"
             type="number"
+            max="9999999"
+            step="0.01"
+            min="0"
+            
             placeholder="Añade la cantidad de gasto: ej. 300"
             value={cantidad}
             onChange={e => setCantidad(Number(e.target.value))}
